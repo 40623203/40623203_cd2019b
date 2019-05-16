@@ -1,0 +1,106 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<script src="tipuesearch_content.js"></script>
+<script src="./../static/jquery.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="./../static/tipuesearch/tipuesearch.min.js"></script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img {
+    border:2px solid blue;
+}
+</style>
+
+<script type="text/javascript">
+/*shorthand of $(document).ready(function(){};); */
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+function doSearch() {
+     $('#tipue_search_input').tipuesearch({
+        newWindow: true, minimumLength: 2
+     });
+}
+$(document).ready(doSearch);
+</script>
+
+</head><header><h1>2019 Collaborative Product Design Internship BG1</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='各組期末報告說明.html'>各組期末報告說明</a><li><a href='執行規劃.html'>執行規劃</a><ul><li><a href='手足球系統模擬.html'>手足球系統模擬</a></li></ul><li><a href='設計與繪圖.html'>設計與繪圖</a><ul><li><a href='零組件尺寸分析.html'>零組件尺寸分析</a><li><a href='參數設計與繪圖.html'>參數設計與繪圖</a><li><a href='細部設計與 BOM.html'>細部設計與 BOM</a></li></ul><li><a href='V-rep 動態模擬.html'>V-rep 動態模擬</a><ul><li><a href='送球機構設計與模擬.html'>送球機構設計與模擬</a><li><a href='系統功能展示.html'>系統功能展示</a></li></ul><li><a href='結案報告.html'>結案報告</a><ul><li><a href='專案口頭簡報.html'>專案口頭簡報</a><li><a href='專案報告書.html'>專案報告書</a></li></ul><li><a href='Mid-term Report.html'>Mid-term Report</a><ul><li><a href='Introduction.html'>Introduction</a><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Complete.html'>Complete</a></li></ul><li><a href='V-rep Tutorial.html'>V-rep Tutorial</a><ul><li><a href='BubbleRob.html'>BubbleRob</a></li></ul><li><a href='V-rep Table Football.html'>V-rep Table Football</a><ul><li><a href='Left player.html'>Left player</a></li></ul><li><a href='Progress.html'>Progress</a><ul><li><a href='03.html'>03</a><li><a href='06.html'>06</a><li><a href='11.html'>11</a><li><a href='12.html'>12</a><li><a href='16.html'>16</a><li><a href='21.html'>21</a><li><a href='22.html'>22</a><li><a href='28.html'>28</a><li><a href='33.html'>33</a><li><a href='40.html'>40</a><li><a href='45.html'>45</a></li></ul><li><a href='Experience.html'>Experience</a><ul><li><a href='40623203.html'>40623203</a><li><a href='40623206.html'>40623206</a><li><a href='40623211.html'>40623211</a><li><a href='40623212.html'>40623212</a><li><a href='40623216.html'>40623216</a><li><a href='40623221.html'>40623221</a><li><a href='40623222.html'>40623222</a><li><a href='40623228.html'>40623228</a><li><a href='40623233.html'>40623233</a><li><a href='40623240.html'>40623240</a><li><a href='40623245.html'>40623245</a></li></ul><li><a href='Attend.html'>Attend</a></li></ul></nav><section><div id="tipue_search_content">Experience << <a href='Experience.html'>Previous</a> <a href='40623206.html'>Next</a> >> 40623206<br /><h1>40623203</h1>
+<p><strong>week1</strong></p>
+<p>從大一用到現在的可攜程式系統，一直都是老師事先製作完成後讓我們熟悉裡面的配置如何運用，都沒有仔細的去了解它是如何製作的，不過老師在這學期一開始的時候，就教導我們如何自行製作一個屬於並符合自己需求的一套<span>可攜程式系統，先照著老師的步驟一步步組裝，了解基本配備，他需要下載不同的軟體並且互相配合，才能夠執行，還需要在版本更新時，更換版本，使得自己的可攜程式系統越來越科技化，越來越好用，也不會因為版本的問題，造成無法跟其他系統做配合。在建立完成後，就可以用它來完成這學期的課程。</span></p>
+<p><strong>week2</strong></p>
+<p>這週是228和平紀念日的連假，我們在上一週已經將課補上完畢，因此我在放假期間補齊老師在上禮拜交的並複習和整合，才能緊跟老師的腳步，前進下一週。</p>
+<p><span>228 Peace Memorial Day</span></p>
+<p><strong><img caption="false" height="375" src="./../images/228和平紀念日.jpg" width="500"/></strong></p>
+<p><a href="https://www.bloggerads.net/Case/Info/6335">出處</a></p>
+<p><strong>week3</strong></p>
+<p><strong>week4</strong></p>
+<p><strong>week5</strong></p>
+<p><strong>week6</strong></p>
+<p><strong>week7</strong></p>
+<p><span>Tomb Sweeping Day</span></p>
+<p><strong><img caption="false" height="403" src="./../images/清明.JPG" width="500"/></strong></p>
+<p><img caption="false" height="354" src="./../images/清明1.JPG" width="500"/></p>
+<p><a href="https://www.google.com/search?biw=1536&amp;bih=674&amp;tbm=isch&amp;sa=1&amp;ei=PvbKXInwEZCmmAXxl5qADg&amp;q=%E6%B8%85%E6%98%8E%E7%AF%80&amp;oq=%E6%B8%85&amp;gs_l=img.1.0.0l10.117480.120412..122837...0.0..0.341.837.10j3-1......0....1..gws-wiz-img.....0..0i24.c8RrKaPr8D4#imgdii=MVb59bnUhP70iM:&amp;imgrc=0KuhCks-RQd-mM:">出處</a></p>
+<p><strong>week8</strong></p>
+<p><strong>week9</strong></p>
+<p><b>week10</b></p>
+<p></p><br />Experience << <a href='Experience.html'>Previous</a> <a href='40623206.html'>Next</a> >> 40623206</div></section></div></body></html>

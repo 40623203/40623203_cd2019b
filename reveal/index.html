@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>
+CMSimfly 網際內容管理
+</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section data-markdown>
+    <script type="text/template">
+## 2019 Spring協同產品設計實習
+
+### BG1
+
+<small>
+Created by [BG1](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g1)
+</small>
+
+[BG1網誌](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g1/blog/)
+
+
+    </script>
+</section>
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 任務分配
+
+* Onshape:
+40623206、40623240
+* V-rep模擬:
+40623203、40623228、40623233
+* 網站維護:
+40623245、40623222
+* Blog:
+40623221、40623216
+* Slideshow:
+40623212、40623211
+* Report:
+40623211
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week1-Week2
+
+* 從有限的網路資源下建立屬於自己的可攜系統
+* 因為第二週彈性放假，所以課程改至第一週星期五晚上6:30~9:50
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week3
+
+* 學習如何使用ungit進行commit(可輸入中文)，且如何將不需要的commit撤除
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week4
+
+* 第一階段手足球協同實習分組名單確認
+* 各組組長建立小組倉儲，且在組別倉儲增加README.md檔
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week5
+
+* Onshape繪製手足球模型
+* 使用V-rep進行老師要求的[bubbleRob]練習(http://mde.tw/cd2019/content/BubbleRob1.html)
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week6
+
+* 網站新增V-rep的操作過程
+* bubbleRob模擬結束
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week7
+
+* 清明節
+* 增設老師所要求的期中內容
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week8
+
+* V-rep模擬，進行[實習任務三](http://mde.tw/cd2019/content/%E5%AF%A6%E7%BF%92%E4%BB%BB%E5%8B%99%E4%B8%89.html)
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# Week9
+* 期中考
+* 學員期中報告影片錄製
+* 影片標題與說明
+* 學員填寫自評表單
+* 個人期中報告影片嵌入小組網頁
+* 學員口頭期中報告
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+    </script>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+# 數學符號與方程式
+
+Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:
+
+$$I = \int \rho R^{2} dV$$
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 利用 Markdown 寫投影片
+以下利用 Markdown 格式展示 Python 程式碼:
+```
+# use threading and subprocess to threading the make process
+import os
+import subprocess
+import threading
+
+def domake():
+    
+    path = "../exposed/api/exposed"
+    ubuntu = "../Ubuntu"
+    
+    # create obj path
+    
+    if not os.path.exists(path+"/../obj"):
+        os.makedirs(path+"/../obj")
+    
+    subprocess.call(["make", "clean"], cwd=path)
+    subprocess.call("make", cwd=path)
+    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
+    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
+    
+make = threading.Thread(target=domake)
+make.start()
+```
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 使用 iframe 導入影片
+
+### 導入影片 template
+
+<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/math/math.js', async: true }
+            ]
+        });
+</script>
+</body>
+
+</html>
+
