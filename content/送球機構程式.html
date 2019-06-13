@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<script src="tipuesearch_content.js"></script>
+<script src="./../static/jquery.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="./../static/tipuesearch/tipuesearch.min.js"></script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img {
+    border:2px solid blue;
+}
+</style>
+
+<script type="text/javascript">
+/*shorthand of $(document).ready(function(){};); */
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+function doSearch() {
+     $('#tipue_search_input').tipuesearch({
+        newWindow: true, minimumLength: 2
+     });
+}
+$(document).ready(doSearch);
+</script>
+
+</head><header><h1>2019 Collaborative Product Design Internship 40623203 Personal Website</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='執行規劃.html'>執行規劃</a><ul><li><a href='手足球系統模擬.html'>手足球系統模擬</a></li></ul><li><a href='V-rep 動態模擬.html'>V-rep 動態模擬</a><ul><li><a href='送球機構模擬.html'>送球機構模擬</a><li><a href='送球機構程式.html'>送球機構程式</a><li><a href='手足球人對人模擬.html'>手足球人對人模擬</a><li><a href='手足球人對人程式.html'>手足球人對人程式</a></li></ul><li><a href='Final Report.html'>Final Report</a></li></ul></nav><section><div id="tipue_search_content">送球機構模擬 << <a href='送球機構模擬.html'>Previous</a> <a href='手足球人對人模擬.html'>Next</a> >> 手足球人對人模擬<br /><h1>送球機構程式</h1>
+<p>利用感測器感測到球，使平台下降到下方的感測器，球滾入後，平台上升，回到場內，繼續競賽</p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init()
+-- 定義參數
+    slider=sim.getObjectHandle('drive')
+-- 定義物件 drive 驅動軸為 slider
+    down_Sensor=sim.getObjectHandle("sensor")
+-- 定義物件 sensor 感測器為 down_Sensor
+    down_Sensor_1=sim.getObjectHandle("sensor1")
+-- 定義物件 sensor1 感測器為 down_Sensor_1
+    up_Sensor=sim.getObjectHandle("sensor0")
+-- 定義物件 sensor0 感測器為 up_Sensor
+    speed=0
+-- 初始速度參數
+    A=-1
+-- 初始值
+    b=-1
+-- 初始值
+end
+
+function sysCall_actuation()
+    down=sim.readProximitySensor(down_Sensor)
+-- down 讀取 down_Sensor 感測器的狀態
+    down_1=sim.readProximitySensor(down_Sensor_1)
+-- down_1 讀取 down_Sensor_1 感測器的狀態
+    up=sim.readProximitySensor(up_Sensor)
+-- up 讀取 up_Sensor 感測器的狀態
+    if (down&gt;0) or (down_1&gt;0) 
+-- 當感測器 down 或 down_1 觸發
+        then A=sim.getSimulationTime()+3 
+-- 設定 A = 模擬時間 + 3 秒 
+    end
+    if (A&gt;0) 
+        then sim.setJointTargetVelocity(slider,speed-0.08)
+-- slider 就會以速度 -0.08 向下移動
+    end
+    if (up&gt;0) 
+-- 當感測器 up 觸發
+        then b=sim.getSimulationTime()+3 
+-- 設定 b = 模擬時間 + 3 秒 
+    end
+    if (b&gt;0) 
+        then sim.setJointTargetVelocity(slider,speed+0.01)
+-- slider 就會以速度 0.01 向上移動
+    end
+end</pre>
+<p></p>
+<br />送球機構模擬 << <a href='送球機構模擬.html'>Previous</a> <a href='手足球人對人模擬.html'>Next</a> >> 手足球人對人模擬</div></section></div></body></html>

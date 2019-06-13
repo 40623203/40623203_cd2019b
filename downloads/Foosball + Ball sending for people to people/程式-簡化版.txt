@@ -1,0 +1,23 @@
+function sysCall_init()
+    slider=sim.getObjectHandle('drive')
+    down_Sensor=sim.getObjectHandle("sensor")
+    down_Sensor_1=sim.getObjectHandle("sensor1")
+    up_Sensor=sim.getObjectHandle("sensor0")
+    speed=0
+    A=-1
+    b=-1
+end
+
+function sysCall_actuation()
+    down=sim.readProximitySensor(down_Sensor)
+    down_1=sim.readProximitySensor(down_Sensor_1)
+    up=sim.readProximitySensor(up_Sensor)
+    if (down>0) or (down_1>0) then A=sim.getSimulationTime()+3 end
+    if (A>0) then
+        sim.setJointTargetVelocity(slider,speed-0.08)
+    end
+    if (up>0) then b=sim.getSimulationTime()+3 end
+    if (b>0) then
+        sim.setJointTargetVelocity(slider,speed+0.01)
+    end
+end
